@@ -49,6 +49,9 @@ export const getReactiveState: GetReactiveState = (key, initialState) => {
   const destroy$ = new Subject();
   const destroy = () => {
     destroy$.next();
+    setState(key, state => {
+      state = initialState;
+    });
   };
   createState(key, initialState);
   const setReactiveState = mutator => {
@@ -57,7 +60,7 @@ export const getReactiveState: GetReactiveState = (key, initialState) => {
   const getReactiveState = () => {
     return getState(key);
   };
-  const state$ = Observable.from(toStream(() => getState())).takeUntil(
+  const state$ = Observable.from(toStream(() => getReactiveState())).takeUntil(
     destroy$
   );
   // TODO: Add "pausable state"
