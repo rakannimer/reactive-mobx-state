@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "include": ["./src/**/*.ts*", "./src/*.ts"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es2016", "dom"],
+    "rootDir": "./src/",
+    "outDir": "./lib/",
+    "jsx": "preserve"
+  }
+}

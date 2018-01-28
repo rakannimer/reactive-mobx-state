@@ -1,0 +1,36 @@
+{
+  "name": "reactive-mobx-state",
+  "version": "0.1.0",
+  "description":
+    "Micro reactive state management solution on top of RxJS Mobx and Immer. ",
+  "main": "dist/index.js",
+  "repository": "https://github.com/rakannimer/reactive-mobx-state",
+  "author": "rakannimer",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc && microbundle lib/index.js && npm run build:docs",
+    "build:docs": "typedoc --out docs/ src/"
+  },
+  "files": ["dist/"],
+  "peerDependencies": {
+    "immer": "^0.8.5",
+    "mobx": "^3.4.1",
+    "mobx-utils": "^3.2.2",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "immer": "^0.8.5",
+    "microbundle": "^0.4.3",
+    "mobx": "^3.4.1",
+    "mobx-react": "^4.3.5",
+    "mobx-utils": "^3.2.2",
+    "parcel-bundler": "^1.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "rxjs": "^5.5.6",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.6.2"
+  }
+}
