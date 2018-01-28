@@ -2,7 +2,7 @@
 
 > Micro reactive state management solution on top of RxJS Mobx and Immer. 
 
-Exposes one function : ```getReactiveState``` 
+Exposes one function : [getReactiveState](https://rakannimer.github.io/reactive-mobx-state/modules/_index_.html#getreactivestate-1)
 
 
 ## Usage
