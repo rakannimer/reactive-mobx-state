@@ -57,7 +57,10 @@ export const getReactiveState: GetReactiveState = (key, initialState) => {
   const getReactiveState = () => {
     return getState(key);
   };
-  const state$ = Observable.from(toStream(() => getState()));
+  const state$ = Observable.from(toStream(() => getState())).takeUntil(
+    destroy$
+  );
+  // TODO: Add "pausable state"
   return {
     destroy,
     destroy$,

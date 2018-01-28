@@ -1,6 +1,6 @@
 {
   "name": "reactive-mobx-state",
-  "version": "0.1.0",
+  "version": "0.1.01",
   "description":
     "Micro reactive state management solution on top of RxJS Mobx and Immer. ",
   "main": "dist/index.js",
