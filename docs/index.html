@@ -68,7 +68,7 @@
 				<blockquote>
 					<p>Micro reactive state management solution on top of RxJS Mobx and Immer. </p>
 				</blockquote>
-				<p>Exposes one function : <code>getRxState</code> </p>
+				<p>Exposes one function : <code>getReactiveState</code> </p>
 				<h2 id="usage">Usage</h2>
 				<pre><code class="lang-js"><span class="hljs-keyword">import</span> getReactiveState <span class="hljs-keyword">from</span> <span class="hljs-string">'reactive-mobx-state'</span>
 <span class="hljs-keyword">const</span> <span class="hljs-keyword">const</span> {
@@ -81,16 +81,25 @@
   <span class="hljs-attr">tick</span>: <span class="hljs-number">0</span>
 });
 </code></pre>
-				<p>outputs</p>
-				<pre><code><span class="hljs-attribute">hello warld</span>
-</code></pre><h2 id="api">API</h2>
+				<h2 id="api">API</h2>
 				<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> getReactiveState <span class="hljs-keyword">from</span> <span class="hljs-string">'reactive-mobx-state'</span>
 <span class="hljs-comment">// OR</span>
 <span class="hljs-keyword">const</span> getReactiveState = <span class="hljs-built_in">require</span>(<span class="hljs-string">'reactive-mobx-state'</span>).default
 </code></pre>
 				<h2 id="install">Install</h2>
-				<p>With <a href="https://yarnpkg.com/en/">yarn</a> installed, run</p>
-				<pre><code>$ yarn <span class="hljs-keyword">add</span><span class="bash"> reactive-mobx-state</span>
+				<p>This is a micro library, and as such, does very little. It provides a React like abstraction on top of the following libraries : </p>
+				<ul>
+					<li><a href="https://mobxjs.github.io">mobx</a></li>
+					<li><a href="https://mobxjs.github.io">mobx-utils</a></li>
+					<li><a href="https://reactivex.io/rxjs/">rxjs</a></li>
+					<li><a href="https://github.com/mweststrate/immer">immer</a></li>
+				</ul>
+				<h4 id="if-you-don-t-use-any-of-these-libraries-in-your-code-already">If you don&#39;t use any of these libraries in your code already</h4>
+				<p>This might not be the library for you. (But check them out !)</p>
+				<p>If you want to go on anyway, install the following dependencies : </p>
+				<pre><code>yarn <span class="hljs-keyword">add</span><span class="bash"> mobx mobx-utils rxjs immer</span>
+</code></pre><p>Then </p>
+				<pre><code>yarn <span class="hljs-keyword">add</span><span class="bash"> reactive-mobx-state</span>
 </code></pre><p>or </p>
 				<pre><code>npm <span class="hljs-selector-tag">i</span> -S reactive-mobx-state
 </code></pre><h2 id="license">License</h2>

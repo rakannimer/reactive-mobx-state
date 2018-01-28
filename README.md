@@ -2,7 +2,8 @@
 
 > Micro reactive state management solution on top of RxJS Mobx and Immer. 
 
-Exposes one function : ```getRxState``` 
+Exposes one function : ```getReactiveState``` 
+
 
 ## Usage
 
@@ -19,13 +20,6 @@ const const {
 });
 
 ```
-
-outputs
-
-```
-hello warld
-```
-
 ## API
 
 ```javascript
@@ -36,12 +30,28 @@ const getReactiveState = require('reactive-mobx-state').default
 
 ## Install
 
-With [yarn](https://yarnpkg.com/en/) installed, run
+This is a micro library, and as such, does very little. It provides a React like abstraction on top of the following libraries : 
+
+ - [mobx](https://mobxjs.github.io)
+ - [mobx-utils](https://mobxjs.github.io)
+ - [rxjs](https://reactivex.io/rxjs/)
+ - [immer](https://github.com/mweststrate/immer)
+
+#### If you don't use any of these libraries in your code already
+
+This might not be the library for you. (But check them out !)
+
+If you want to go on anyway, install the following dependencies : 
 
 ```
-$ yarn add reactive-mobx-state
+yarn add mobx mobx-utils rxjs immer
 ```
 
+Then 
+
+```
+yarn add reactive-mobx-state
+```
 or 
 
 ```
