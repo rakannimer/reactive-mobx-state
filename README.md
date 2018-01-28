@@ -5,6 +5,8 @@
 Exposes one function : [getReactiveState](https://rakannimer.github.io/reactive-mobx-state/modules/_index_.html#getreactivestate-1)
 
 
+[![Try it out !](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/n741n4wrrj)
+
 ## Usage
 
 ```js
